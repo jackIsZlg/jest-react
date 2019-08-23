@@ -1,0 +1,48 @@
+{
+  "name": "jest-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test0": "jest",
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "moduleDirectories": [
+      "node_modules",
+      "bower_components",
+      "shared"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy",
+      "^components(.*)$": "<rootDir>/src/components$1",
+      "^modules(.*)$": "<rootDir>/src/modules$1"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.8.0",
+    "enzyme": "^3.10.0",
+    "identity-obj-proxy": "^3.0.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "regenerator": "^0.14.2"
+  }
+}
